@@ -22,9 +22,9 @@
 		}
 		
 		img {
-		float: left;
 		padding: 10px;
 		}
+		
     </style>
     
 </head>
@@ -65,7 +65,11 @@
             </div>
         </div>
 		
-		
+		<div class="row">
+            <div class="col-sm-12">
+				<button id="btnClickMe" type="button">Click Me</button>
+            </div>
+        </div>
     </div>
 
     <!-- JS -->
@@ -74,6 +78,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         // JavaScript HERE
+		
+		$("#btnClickMe").click(function() {
+			${"img"}.fadeToggle();
+			}
     </script>
 </body>
 
